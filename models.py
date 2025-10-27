@@ -35,7 +35,7 @@ class Sportsman(Base):
     razrad:Mapped[str] = mapped_column(String(64))
     FIOTren:Mapped[str] = mapped_column(String(128)) 
     dso:Mapped[str] = mapped_column(String(32))
-    vozrascategor[str] = mapped_column(String(64))
+    vozrast_categor[str] = mapped_column(String(64))
     user: Mapped[int] = mapped_column(ForeignKey('user.id', ondelete='CASCADE'))
 
     async def _init_db():
